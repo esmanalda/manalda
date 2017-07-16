@@ -1,0 +1,17 @@
+#kullanıcı ismi ve parola kontrol programı
+
+defkullanıcı = "freeman"
+defparola = "1234"
+
+kullanıcı = input("kullanıcı adı:")
+parola = input("parola:")
+
+if ((defkullanıcı == kullanıcı) and (defparola == parola)):
+    print("sitemize hoşgeldiniz")
+
+elif (defkullanıcı != kullanıcı) and (defparola == parola):
+    print("kullanıcı adınızı yanlış girdiniz")
+elif (defkullanıcı == kullanıcı) and (defparola != parola):
+    print("parolanızı yanlış girdiniz")
+else:
+    print("tekrar deneyiniz")
