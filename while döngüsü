@@ -1,0 +1,21 @@
+defkullanici = "freeman"
+defparola = "1234"
+
+while (True):
+    kullanici = input("kullanıcı adı:")
+    parola = input("parola:")
+    if ((defkullanici == kullanici) and (defparola == parola)):
+        print("hoşgeldin",kullanici)
+        break
+    elif ((kullanici != defkullanici) and (defparola == parola)):
+            print("kullanıcı adınızı kontrol ediniz")
+    elif ((defkullanici == kullanici) and (defparola != parola)):
+                print("şifrenizi mi unuttunuz?,(E/H)")
+                cevap = input()
+                if (cevap == "E"):
+                    yeniparola = input("yeni parola:")
+                    yeniparola = input("yeni parolayı tekrar girin:")
+                    defparola = yeniparola
+
+                else:
+                    print("tekrar deneyin")
